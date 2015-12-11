@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.css'%}">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+    </head>
+   <body>
+	   <center>
+		   <div class="page-header">
+			   <h1><a href="/">SUMMRYKu</a></h1>
+			   <h2>Kami Meringkas Artikel Berita</h2>
+			   <div class="containerku">
+				   <h3><img src="{% static "images/cut.png" %}" alt="SUMMRYKu" width="70" height="80"/></h3>
+				</div>
+			</div>
+		</center>
+		<div class="navbar-collapse-collapse">
+			<ul class="nav navbar-nav navbar-center">
+				<li><a href="{% url 'home' %}">Beranda</a></li>
+				<li><a href="{% url 'about' %}">Tentang Kami</a></li>
+			</ul>
+		</div>
+		<div class="content container">
+			<div class="row">
+				<div class="col-md-8">
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 col-md-2 sidebar">
+					{% block side_block %}{% endblock %}
+				</div>
+				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+					<div>
+						{% block body_block %}{% endblock %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-footer">
+			<h1><center>Copyright by FirdaMaryana</center> <i class="fa fa-facebook"> </i><i class="fa fa-twitter"> </i><i class="fa fa-instagram"></i></h1>
+		</div>
+	</body>
+</html>

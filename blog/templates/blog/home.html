@@ -1,0 +1,38 @@
+{% extends 'blog/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Beranda{% endblock %}
+
+{% block body_block %}
+    <div class="page-header2">
+                <h1>Beranda</h1><br>
+		<center>
+		<p> Masukkan Artikel Berita Disini ! </p>
+		</center>
+	<div class="saya">		
+	<center> 
+	<textarea class="julak-textarea" width="50" height="70"></textarea>
+	</center>
+		<button class= "page" style="margin-right:30px;">Ringkas</button>
+	</div>
+	<br>
+	<center> 
+	<br>
+	<br>
+	<br>
+	<br>
+<br>
+	<center>
+	<p> Hasil Ringkasan : </p></center>
+	<br>
+	</center>
+	<div class="kamu">
+	<center>
+	<textarea class="julak-textarea" width="70" height="80"></textarea>
+	</center>
+	<br>
+	<br>
+	</div>
+</div>
+{% endblock %}
