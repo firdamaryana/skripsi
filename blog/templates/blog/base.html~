@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<div class="page-footer">
-			<h1><center>Copyright by FirdaMaryana</center> <i class="fa fa-facebook"> </i><i class="fa fa-twitter"> </i><i class="fa fa-instagram"></i></h1>
+			<h1><center>Copyright by FirdaMaryana</center> <a href = "alamat"> <i class="fa fa-facebook"> </i></a> <i class="fa fa-twitter"> </i><i class="fa fa-instagram"></i></h1>
 		</div>
 	</body>
 </html>

@@ -6,10 +6,11 @@
 
 {% block body_block %}
     <div class="page-header1">
-                <h1>SUMMRYKu</h1>
+		<h1>SUMMRYKu</h1>
 		<p> SUMMRYKu merupakan sebuah aplikasi peringkas kata online yang dibuat dengan menggunakan bahasa Python dan Framework Django. Aplikasi ini diharapkan dapat mempermudah user dalam melakukan peringkasan, khususnya peringkasan suatu artikel berita. Website ini dibuat oleh Firda Maryana.</p><br>
 		<p>Terima Kasih :) </p>
-            <div>
-            <img  width="120" height="130" src="{% static "images/firda.jpg" %}" alt="Picture of Firda" /> <!-- New line -->
-            </div>
+		<div>
+			<img  width="120" height="130" src="{% static "images/firda.jpg" %}" alt="Picture of Firda" /> <!-- New line -->
+		</div>
+	</div>
 {% endblock %}
