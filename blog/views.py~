@@ -1,15 +1,16 @@
-from django.shortcuts import render
-from django.utils import timezone
-from .models import Post
 from django.shortcuts import render, get_object_or_404
+from django.utils import timezone
 
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
+from nltk.tokenize import sent_tokenize,word_tokenize
+from nltk.corpus import stopwords
+from collections import defaultdict
+from string import punctuation
+from heapq import nlargest
 
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
+from .models import Post, Summarization
+from .forms import SummarizationForm
+from .summarization import FrequencySummarizer
+
 
 def about(request):
 
@@ -24,11 +25,40 @@ def about(request):
 
 def home(request):
 
-    # Construct a dictionary to pass to the template engine as its context.
-    # Note the key boldmessage is the same as {{ boldmessage }} in the template!
-    context_dict = {'boldmessage': "I am bold font from the context"}
+    summary = ""
+    error = ""
+    if request.method == 'POST':
+        form = SummarizationForm(request.POST)
 
-    # Return a rendered response to send to the client.
-    # We make use of the shortcut function to make our lives easier.
-    # Note that the first parameter is the template we wish to use.
+        if form.is_valid():
+            summarization_form = form.save(commit=False)
+            text_input = summarization_form.text
+            fs = FrequencySummarizer()
+            try:
+                for s in fs.summarize(text_input, 2):
+				    summary += "<p>{}</p>".format(s)
+            except:
+                pass
+            print text_input
+            summarization_form.summary = summary
+            if summary == "":
+				error = "Input with the right sentences"
+            else:
+				summarization_form.save()
+
+            
+			
+            context_dict = {'form': form, 'summary':summary,'error':error}
+            return render(request, 'blog/home.html', context_dict)
+
+        else:
+            
+            print form.errors
+    else:
+        form = SummarizationForm()
+
+    context_dict = {'form': form, 'summary':summary, 'error':error}
+
     return render(request, 'blog/home.html', context_dict)
+
+

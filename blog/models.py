@@ -17,3 +17,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Summarization(models.Model):
+    text = models.TextField()
+    summary = models.TextField()
+
+	
+
