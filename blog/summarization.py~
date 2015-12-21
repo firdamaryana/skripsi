@@ -56,15 +56,3 @@ class FrequencySummarizer:
   def _rank(self, ranking, n):
     """ return the first n sentences with highest ranking """
     return nlargest(n, ranking, key=ranking.get)
-
-def get_text(text):
- """ 
- """
-
-text = "Automatic summarization is the process of reducing a text document with a computer program in order to create a summary that retains the most important points of the original document. As the problem of information overload has grown, and as the quantity of data has increased, so has interest in automatic summarization. Technologies that can make a coherent summary take into account variables such as length, writing style and syntax. Automatic data summarization is a very important area within machine learning and data mining. Summarization technologies are used today, in a large number of sectors in industry today. An example of the use of summarization technology is search engines such as Google. Other examples include document summarization, image collection summarization and video summarization. The main idea of summarization is to find a representative subset of the data, which contains the information of the entire set. Document summarization, tries to automatically create a representative summary or abstract of the entire document, by finding the most informative sentences."
-fs = FrequencySummarizer()
-
-print '==============================================================================='
-
-for s in fs.summarize(text, 2):
-  print '*',s

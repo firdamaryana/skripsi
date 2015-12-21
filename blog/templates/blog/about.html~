@@ -7,8 +7,8 @@
 {% block body_block %}
     <div class="page-header1">
                 <h1>SUMMRYKu</h1>
-		<p> SUMMRYKu is an online text summarization application that made with python language and Django framework. This application expected to facilitate user in doing summarization, especially summarization of a news article.The website made by firda maryana.</p><br>
-		<p>Terima Kasih :) </p>
+		<p> SUMMRYKu is an online text summarization application that made with python language and Django framework. This application expected to facilitate user in doing summarization, especially summarization of a news article. This website made by firda maryana.</p><br>
+		<p>Thank You :) </p>
             <div>
             <img  width="120" height="130" src="{% static "images/firda.jpg" %}" alt="Picture of Firda" /> <!-- New line -->
             </div>

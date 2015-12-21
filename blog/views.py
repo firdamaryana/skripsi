@@ -60,5 +60,3 @@ def home(request):
     context_dict = {'form': form, 'summary':summary, 'error':error}
 
     return render(request, 'blog/home.html', context_dict)
-
-

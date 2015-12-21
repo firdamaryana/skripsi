@@ -8,6 +8,7 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    text-shadow: 2px 2px 3px #000;
 }
 
 .containerku h3 {
@@ -20,6 +21,7 @@
 
 .page-header h2 {
     font-size: 20pt;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .content {
@@ -81,6 +83,7 @@ margin-right: 250px;
 .saya textarea	{
 width:40%;
 height: 40%;
+margin-right: 180px;
 }
 
 
@@ -115,15 +118,14 @@ background : #FFFF33;
 }
 
 .saya button {
- position: relative;
- left: 40%;
- float: left;
- right: 0%;
+ position:absolute;
+ left:375px;
+ top:450px;
  margin-top:20px;
  margin-left:200px;
  display : block ;
  background : #FF3366;
- width : 200px;
+ width : 150px;
  padding : 12px;
  cursor : pointer;
  color : #fff;
@@ -169,3 +171,97 @@ background : #FFFF33;
  width : 60px;
  height: 20px;
 }
+
+.page:hover {
+ color: #660066;
+}
+
+.right-control {
+  height: 100px;
+  width: 100px; 
+}
+
+.left-control {
+  left: -51px
+} 
+
+.right-control {
+  right: -51px;
+}
+
+.left-control:hover, 
+.right-control:hover {
+  color: #666666;
+}
+
+#home-slider:hover .left-control {
+  left:30px
+} 
+
+#home-slider:hover .right-control {
+  right:30px
+}
+
+.left-control {
+
+  top: 50%;
+  height: 51px;
+  width: 51px;
+  line-height: 48px;
+  border-radius: 50%;  
+  z-index: 20;
+  font-size: 24px;
+  color: #FF3366;
+  text-align: center;
+}
+
+.right-control {
+  position: relative;
+  right: 220px;
+  top: 50%;
+  height: 51px;
+  width: 51px;
+  line-height: 48px;
+  border-radius: 50%;  
+  z-index: 20;
+  font-size: 24px;
+  color: #FF3366;
+  text-align: center;
+}
+.sum-text p {
+position:absolute;
+left:340px;
+top:430px;
+}
+
+.sum-text a {
+position:absolute;
+left:440px;
+top:430px;
+}
+
+.sum-text2 p {
+position:absolute;
+left:475px;
+top:430px;
+}
+
+.kamu {
+font-family: Apple Chancery;
+font-size: 12pt;
+text-align: justify;
+margin-right: 220px;
+}
+
+.result {
+position:absolute;
+left:440px;
+top:550px;
+}
+
+.text-here p {
+position:absolute;
+left:370px;
+top:70px;
+}
+
