@@ -35,7 +35,7 @@ def home(request):
             text_input = summarization_form.text
             fs = FrequencySummarizer()
             try:
-                for s in fs.summarize(text_input, 2):
+                for s in fs.summarize(text_input, 1):
 				    summary += "<p>{}</p>".format(s)
             except:
                 pass
@@ -60,5 +60,3 @@ def home(request):
     context_dict = {'form': form, 'summary':summary, 'error':error}
 
     return render(request, 'blog/home.html', context_dict)
-
-

@@ -31,7 +31,7 @@
 
 			</ul>
 		</div>
-		<div class="content container">
+		<div class="content-container">
 			<div class="row">
 				<div class="col-md-8">
 				</div>
@@ -43,14 +43,14 @@
 					{% block side_block %}{% endblock %}
 				</div>
 				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-					<div>
+				
 						{% block body_block %}{% endblock %}
-					</div>
+					
 				</div>
 			</div>
 		</div>
 		<div class="page-footer">
-			<h1><center>©Copyright by FirdaMaryana</center><br><center><a href = "https://web.facebook.com/Firdamaryana " target="_blank"><i class="fa fa-facebook"></i></a><a href = "https://twitter.com/Firdamaryana" target="_blank" ><i class="fa fa-twitter"></i></a><a href = "https://www.instagram.com/firdamaryana/" target="_blank"><i class="fa fa-instagram"></i></a></center></h1>
+			<h1><center>©Copyright by FirdaMaryana</center><br><center><a href = "https://web.facebook.com/Firdamaryana " target="_blank"><i class="fa fa-facebook"></i></a><a href = "https://twitter.com/Firdamaryana" target="_blank" ><i class="fa fa-twitter"></i></a><a href = "https://www.instagram.com/firdamaryana/" target="_blank"><i class="fa fa-instagram"></i></a><a href = "https://www.linkedin.com/in/firda-maryana-1266a98a " target="_blank"><i class="fa fa-linkedin"></i></a></center></h1>
 		</div>
 	</body>
 </html>
