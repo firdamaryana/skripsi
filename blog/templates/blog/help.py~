@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Halp{% endblock %}
+
+{% block body_block %}
+    <div class="page-header1">
+                <h1>Tentang Kami</h1>
+		<p> SUMMARYKu adalah aplikasi peringkasan teks. Dibuat dengan database MySQL, bahasa pemrogramman Python dan Framework Django. Aplikasi ini diharapkan dapat memudahkan pengguna dalam melakukan peringkasan, terutama peringkasan teks dari artikel berita Bahasa Indonesia. Klik tab meringkas untuk memulainya!</p><br>
+		<p>Salam,</p>
+            <div>
+            <img  width="120" height="120" src="{% static "images/firda.jpg" %}" alt="Gambar Firda" /> <!-- New line -->
+            </div><br>
+</div>
+{% endblock %}
+
+

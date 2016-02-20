@@ -6,12 +6,22 @@
 
 {% block body_block %}
     <div class="page-header2">
-                <h1>Summarize</h1><br>
+                <h1>Meringkas</h1><br>
+			<div style="color:red;position:absolute;left:300px">
+	
+	{% if form.errors %}
+	   {% for key, error_list in form.errors.iteritems %} 
+	       {{error_list}}
+	   {% endfor %} 
+	{% endif %}
+
+	</div>
+
 		<center>
-	<div style="color:red;position:absolute;left:345px;">{{error}}</div><br>
+	<div style="color:red;position:absolute;left:310px;">{{error}}</div><br>
 
 		<div class="text-here">		
-		<p> Paste Your Text Below ! </p></div><br>
+		<p> Masukkan Teks Pada Kolom Dibawah Ini !</p></div><br>
 
 		</center>
 	<div class="saya">		
@@ -20,27 +30,22 @@
 		{% csrf_token %}
 	<center> 
 		{{form.text}}
-	<div style="color:red;position:absolute;left:300px">{{form.errors}}</div>
 	</center><br>
 		<center>
 		<div class="sum-text">
-		<p>Summarize in</p><div class="sum-text2">
-		<p>Sentences.</p></div><a><input type="text" name="nama" style="height: 25px; weight: 10px;width: 28px;"/></a>
+		<p>Ringkas dalam</p><div class="sum-text2">
+		<p>Kalimat.</p></div><a>{{form.jumlah}}</a>
 		</div>
-		<button class= "page" style="margin-right:30px;">Summarize</button></center>
+		<button class= "page" style="margin-right:30px;">Ringkas</button></center>
 	</form>
 	</div>
 	<br>
-	<center> 
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	<center>
 	<br>
 	<div class="result">
-	<p> Result : </p>
+	<p> Hasil Ringkasan : </p>
 	</div>
+	<br>
 	<br>
 	</center>
 	<div class="kamu">

@@ -7,7 +7,7 @@ from collections import defaultdict
 from string import punctuation
 from heapq import nlargest
 
-from .models import Post, Summarization
+from .models import Summarization
 from .forms import SummarizationForm
 from .summarization import FrequencySummarizer
 
@@ -23,6 +23,7 @@ def about(request):
     # Note that the first parameter is the template we wish to use.
     return render(request, 'blog/about.html', context_dict)
 
+
 def home(request):
 
     summary = ""
@@ -34,15 +35,16 @@ def home(request):
             summarization_form = form.save(commit=False)
             text_input = summarization_form.text
             fs = FrequencySummarizer()
+            jumlah=int(form.cleaned_data['jumlah'])
             try:
-                for s in fs.summarize(text_input, 1):
+                for s in fs.summarize(text_input, jumlah):
 				    summary += "<p>{}</p>".format(s)
             except:
                 pass
             print text_input
             summarization_form.summary = summary
             if summary == "":
-				error = "Input with the right sentences"
+				error = "Masukkan teks dengan kalimat yang tepat !"
             else:
 				summarization_form.save()
 
@@ -60,3 +62,15 @@ def home(request):
     context_dict = {'form': form, 'summary':summary, 'error':error}
 
     return render(request, 'blog/home.html', context_dict)
+
+def help(request):
+
+    # Construct a dictionary to pass to the template engine as its context.
+    # Note the key boldmessage is the same as {{ boldmessage }} in the template!
+    context_dict = {'boldmessage': "I am bold font from the context"}
+
+    # Return a rendered response to send to the client.
+    # We make use of the shortcut function to make our lives easier.
+    # Note that the first parameter is the template we wish to use.
+    return render(request, 'blog/help.html', context_dict)
+

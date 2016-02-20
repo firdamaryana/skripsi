@@ -1,33 +1,30 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>SUMMRYKu</title>
+        <title>SUMMARYKu</title>
 	<link rel="icon" href="{% static 'images/cut.png'%}">
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
         <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css'%}">
         <link rel="stylesheet" href="{% static 'css/font-awesome.css'%}">
-        <script src="{% static 'js/jquery.scrollTo.js'%"></script>
-	<script src="{% static 'js/jquery.mousescroll.js'%"></script>
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/font.css'%}">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
     </head>
    <body>
 	   <center>
 		   <div class="page-header">
-			   <h1><a href="/">SUMMRYKu</a></h1>
-			   <h2>Your Online Text Summarization</h2>
+			   <h1><a href="/">SUMMARYKu</a></h1>
+			   <h2>Aplikasi perigkasan teks artikel Berita</h2>
 			   <div class="containerku">
-				   <h3><img src="{% static "images/cut.png" %}" alt="SUMMRYKu" width="70" height="80"/></h3>
+				   <h3><img src="{% static "images/cut.png" %}" alt="SUMMRYKu" width="55" height="65"/></h3>
 				</div>
 			</div>
 		</center>
 		<div class="navbar-collapse-collapse">
-			<a class="left-control" href="{% url 'about' %}" data-slide="prev" style="margin-right:1000px;"><i class="fa fa-angle-left"></i></a>
-     			<a class="right-control" href="{% url 'home' %}" data-slide="next"><i class="fa fa-angle-right"></i></a>
 			<ul class="nav navbar-nav navbar-center">
-				<li><a href="{% url 'about' %}">About Us</a></li>
-				<li><a href="{% url 'home' %}">Summarize</a></li>
+				<li><a href="{% url 'about' %}">Tentang Aplikasi</a></li>
+				<li><a href="{% url 'home' %}">Meringkas</a></li>
+				<li><a href="{% url 'help' %}">Bantuan</a></li>
 
 			</ul>
 		</div>
@@ -50,7 +47,7 @@
 			</div>
 		</div>
 		<div class="page-footer">
-			<h1><center>©Copyright by FirdaMaryana</center><br><center><a href = "https://web.facebook.com/Firdamaryana " target="_blank"><i class="fa fa-facebook"></i></a><a href = "https://twitter.com/Firdamaryana" target="_blank" ><i class="fa fa-twitter"></i></a><a href = "https://www.instagram.com/firdamaryana/" target="_blank"><i class="fa fa-instagram"></i></a><a href = "https://www.linkedin.com/in/firda-maryana-1266a98a " target="_blank"><i class="fa fa-linkedin"></i></a></center></h1>
+			<h1><center>©F i r d a  M a r y a n a</center><br><center><a href = "https://web.facebook.com/Firdamaryana " target="_blank"><i class="fa fa-facebook"></i></a><a href = "https://twitter.com/Firdamaryana" target="_blank" ><i class="fa fa-twitter"></i></a><a href = "https://www.instagram.com/firdamaryana/" target="_blank"><i class="fa fa-instagram"></i></a><a href = "https://www.linkedin.com/in/firda-maryana-1266a98a " target="_blank"><i class="fa fa-linkedin"></i></a></center></h1>
 		</div>
 	</body>
 </html>

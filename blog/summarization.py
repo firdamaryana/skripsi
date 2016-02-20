@@ -13,7 +13,7 @@ class FrequencySummarizer:
     """
     self._min_cut = min_cut
     self._max_cut = max_cut 
-    self._stopwords = set(stopwords.words('english') + list(punctuation))
+    self._stopwords = set(stopwords.words('indonesian') + list(punctuation))
 
   def _compute_frequencies(self, word_sent):
     """ 

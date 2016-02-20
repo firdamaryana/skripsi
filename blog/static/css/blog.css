@@ -71,13 +71,18 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
+.p1, .p2 , .p3, .p4 {
+    font-weight: bold;
+}
+
+
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
 
 .navbar-collapse-collapse ul{
     position: relative;
-    left: 40%;
+    left: 35%;
     margin-top:0px;
     margin-bottom: 0px;
     background-color: #FFCCCC;
@@ -208,57 +213,7 @@ h1, h2, h3, h4 {
     color: #660066; 
 }
 
-.right-control {
-    height: 100px;
-    width: 100px; 
-}
 
-.left-control {
-    left: -51px
-} 
-
-.right-control {
-    right: -51px;
-}
-
-.left-control:hover, 
-.right-control:hover {
-    color: #666666;
-}
-
-#home-slider:hover .left-control {
-    left:30px
-} 
-
-#home-slider:hover .right-control {
-    right:30px
-}
-
-.left-control {
-    top: 50%;
-    height: 51px;
-    width: 51px;
-    line-height: 48px;
-    border-radius: 50%;  
-    z-index: 20;
-    font-size: 24px;
-    color: #FF3366;
-    text-align: center;
-}
-
-.right-control {
-    position: relative;
-    right: 220px;
-    top: 50%;
-    height: 51px;
-    width: 51px;
-    line-height: 48px;
-    border-radius: 50%;  
-    z-index: 20;
-    font-size: 24px;
-    color: #FF3366;
-    text-align: center;
-}
 .sum-text p {
     position:absolute;
     left:340px;
@@ -269,6 +224,7 @@ h1, h2, h3, h4 {
     position:absolute;
     left:440px;
     top:430px;
+    color: #FF0066;
 }
 
 .sum-text2 p {
@@ -277,22 +233,66 @@ h1, h2, h3, h4 {
     top:430px;
 }
 
+.selamat {
+    position:absolute;
+    left:400px;
+    top:800px
+}
+
 .kamu {
     font-family: Apple Chancery;
     font-size: 12pt;
     text-align: justify;
     margin-right: 220px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    border: 4px dotted #FF0066;
+    border-decoration:blink;
 }
 
 .result {
     position:absolute;
-    left:430px;
+    left:400px;
     top:550px;
 }
 
 .text-here p {
+  -webkit-animation: fade-in 0.27s linear infinite alternate;
+  -moz-animation: fade-in 0.27s linear infinite alternate;
+  animation: fade-in 0.9s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+}
+
+.text-here p {
     position:absolute;
-    left:370px;
+    left:320px;
     top:70px;
 }
 
+.errorlist {list-style-type:none;}

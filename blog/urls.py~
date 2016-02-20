@@ -5,4 +5,6 @@ urlpatterns = [
     url(r'^$', views.about, name='about'),
     url(r'^about/$', views.about, name='about'),
     url(r'^home/$', views.home, name='home'),
+    url(r'^help/$', views.help, name='help'),
+
 ]
