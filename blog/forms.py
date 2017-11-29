@@ -6,9 +6,6 @@ class SummarizationForm(forms.ModelForm):
     PILIHAN=(
             (1,1),
             (2,2),
-            (3,3),
-            (4,4),
-            (5,5),
             )
     jumlah = forms.ChoiceField(choices=PILIHAN)
     text = forms.CharField(widget=forms.Textarea, error_messages={'required': 'Teks Tidak Boleh Kosong!'})

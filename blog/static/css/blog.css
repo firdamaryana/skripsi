@@ -17,6 +17,23 @@
     padding: 8px 10px 10px 40px;
 }
 
+.page-header1 h1 {
+    text-decoration: none;
+    text-shadow: 1px 2px 1px #FF6666;
+}
+
+.page-header1 p {
+    font-family: Apple Chancery;
+    font-size: 14pt;
+    text-align: justify;
+    margin-right: 250px;
+}
+
+.page-header h1 {
+    font-family: Apple Chancery;
+    font-weight: bold;
+}
+
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
@@ -29,18 +46,24 @@
     text-shadow: 1px 2px 1px #FF6666;
 }
 
+.page-header3 h1 {
+    text-decoration: none;
+    text-shadow: 1px 2px 1px #FF6666;
+}
+
 .containerku h3 {
     position: relative;
-    left: 29%;
+    left: 15%;
     float: left;
     right: 0%;
-    margin-top:-100px;
+    margin-top:-110px;
 }
 
 .page-header h2 {
-    color: #333333;
-    font-size: 20pt;
-    text-shadow: 1px 1px 1px #FFFFFF;
+    color: #383838;
+    font-size: 21pt;
+    font-family: Apple Chancery;
+    font-weight: bold;
 }
 
 .content {
@@ -75,7 +98,6 @@ h1, h2, h3, h4 {
     font-weight: bold;
 }
 
-
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
@@ -105,17 +127,6 @@ h1, h2, h3, h4 {
     color:#CC66FF;
 }
 
-.page-header1 h1 {
-    text-decoration: none;
-    text-shadow: 1px 2px 1px #FF6666;
-}
-
-.page-header1 p {
-    font-family: Apple Chancery;
-    font-size: 14pt;
-    text-align: justify;
-    margin-right: 250px;
-}
 
 .saya textarea	{
     width:40%;
@@ -127,27 +138,6 @@ h1, h2, h3, h4 {
 .kamu textarea { 
     width:40%;
     height: 40%
-}
-
-.kamu button {
-     position: relative;
-     left: 40%;
-     float: left;
-     right: 0%;
-     margin-top:20px;
-     margin-left:200px;
-     display : block ;
-     background : #FF3366;
-     width : 200px;
-     padding : 12px;
-     cursor : pointer;
-     color : #fff;
-     border : 0px;
-     margin : 2em auto 2em;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;
-     font-size:17px ;
 }
 
 .page hover {
@@ -183,10 +173,9 @@ h1, h2, h3, h4 {
     font-size: 12pt;
 }
 
-}
 /* unvisited link */
 .page-footer a:link {
-    color: ;
+    color: #ffffff;
 }
 
 /* visited link */
@@ -229,7 +218,7 @@ h1, h2, h3, h4 {
 
 .sum-text2 p {
     position:absolute;
-    left:475px;
+    left:492px;
     top:430px;
 }
 
@@ -250,7 +239,6 @@ h1, h2, h3, h4 {
     padding-right: 10px;
     margin-bottom: 20px;
     border: 4px dotted #FF0066;
-    border-decoration:blink;
 }
 
 .result {
