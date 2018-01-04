@@ -24,7 +24,7 @@
 		<p> Masukkan Teks Pada Kolom Dibawah Ini !</p></div><br>
 
 		</center>
-	<div class="saya">		
+	<div class="saya"></div>		
 
 	<form method="post">
 		{% csrf_token %}
