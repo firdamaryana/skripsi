@@ -10,7 +10,11 @@
 
 .page-header3 {
     margin-top:15px;
-    margin-bottom:700px;
+    margin-bottom:660px;
+    font-family: Apple Chancery;
+    font-size: 14pt;
+    text-align: justify;
+    margin-right: 200px;
 }
 
 
@@ -47,7 +51,7 @@
     font-family: Apple Chancery;
     font-size: 14pt;
     text-align: justify;
-    margin-right: 250px;
+    margin-right: 200px;
 }
 
 .page-header h1 {
