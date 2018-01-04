@@ -1,6 +1,6 @@
 .page-header1 {
     margin-top:15px;
-    margin-bottom:820px;
+    margin-bottom:1000px;
 }
 
 .page-header2 {
@@ -83,7 +83,7 @@
 }
 
 .page-header h2 {
-    color: #383838;
+    color: #3838;
     font-size: 21pt;
     font-family: Apple Chancery;
     font-weight: bold;
