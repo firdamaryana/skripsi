@@ -12,8 +12,8 @@
 
 .page-header {
     background-color: #FF6666;
-    margin-top: -15px;
-    margin-bottom: 2px;
+    margin-top: -25px;
+    margin-bottom: -15px;
     padding: 8px 10px 10px 40px;
 }
 
@@ -52,10 +52,8 @@
 }
 
 .containerku h3 {
-    position: relative;
-    left: 15%;
-    float: left;
-    right: 0%;
+    position: absolute;
+    max-width: 100%;
     margin-top:-110px;
 }
 
@@ -166,7 +164,7 @@ h1, h2, h3, h4 {
 
 .page-footer h1 {
     background-color: #FF6666;
-    margin-top: 3;
+    margin-top: -10px;
     margin-bottom: 0;
     padding: 20px 20px 20px 40px;
     font-family: Apple Chancery;
@@ -218,7 +216,7 @@ h1, h2, h3, h4 {
 
 .sum-text2 p {
     position:absolute;
-    left:475px;
+    left:492px;
     top:430px;
 }
 
