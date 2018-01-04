@@ -304,8 +304,8 @@ h1, h2, h3, h4 {
 
 .text-here p {
     position:absolute;
-    left:320px;
-    top:70px;
+    margin-left:100px;
+    margin-top:-30px;
 }
 
 .errorlist {list-style-type:none;}
