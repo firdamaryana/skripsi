@@ -155,7 +155,7 @@ h1, h2, h3, h4 {
 .saya textarea	{
     position: relative;
     width:30%;
-    height:25%;
+    height:15%;
     margin-right: 180px;
 }
 
