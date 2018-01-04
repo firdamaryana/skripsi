@@ -2,9 +2,10 @@
 
 {% load staticfiles %}
 
-{% block title %}Halp{% endblock %}
+{% block title %}Help{% endblock %}
 
 {% block body_block %}
+<div>
     <div class="page-header3">
 	
                 <h1>Bantuan</h1>
@@ -28,6 +29,7 @@
 	        <p> 4. Kalimat yang memiliki bobot terbesar adalah kalimat yang muncul pada hasil peringkasan</p><br>
 		<br>
 	
+</div>
 </div>
 {% endblock %}
 

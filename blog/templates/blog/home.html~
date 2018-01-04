@@ -2,7 +2,7 @@
 
 {% load staticfiles %}
 
-{% block title %}Beranda{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block body_block %}
     <div class="page-header2">
@@ -24,7 +24,7 @@
 		<p> Masukkan Teks Pada Kolom Dibawah Ini !</p></div><br>
 
 		</center>
-	<div class="saya"></div>		
+	<div class="saya">		
 
 	<form method="post">
 		{% csrf_token %}
