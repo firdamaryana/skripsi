@@ -231,7 +231,7 @@ h1, h2, h3, h4 {
 .sum-text p {
     position:absolute;
     left:300px;
-    top:300px;
+    top:380px;
 }
 
 .sum-text a {
