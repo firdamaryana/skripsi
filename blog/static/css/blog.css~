@@ -1,7 +1,18 @@
 .page-header1 {
     margin-top:15px;
-    margin-bottom:-15px;
+    margin-bottom:500px;
 }
+
+.page-header2 {
+    margin-top:15px;
+    margin-bottom:100px;
+}
+
+.page-header3 {
+    margin-top:15px;
+    margin-bottom:100px;
+}
+
 
 .content-container {
     margin-right:15px;
