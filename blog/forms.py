@@ -8,7 +8,7 @@ class SummarizationForm(forms.ModelForm):
             (2,2),
             )
     jumlah = forms.ChoiceField(choices=PILIHAN)
-    text = forms.CharField(widget=forms.Textarea, error_messages={'required': 'Teks Tidak Boleh Kosong!'})
+    text = forms.CharField(widget=forms.Textarea, error_messages={'required': 'Teks Tidak Boleh Kosong !'})
     class Meta:
         # Provide an association between the ModelForm and a model
         model = Summarization
