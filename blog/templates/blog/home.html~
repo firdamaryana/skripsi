@@ -16,9 +16,8 @@
 	{% endif %}
 
 	</div>
-
 		<center>
-	<div style="color:red;position:absolute;left:310px;">{{error}}</div><br>
+		<div style="color:red;position:absolute;left:310px;">{{error}}</div><br>
 
 		<div class="text-here">		
 		<p> Masukkan Teks Pada Kolom Dibawah Ini !</p></div><br>
@@ -33,8 +32,8 @@
 	</center><br>
 		<center>
 		<div class="sum-text">
-		<p>Ringkas dalam</p><div class="sum-text2">
-		<p>kalimat.</p></div><a>{{form.jumlah}}</a>
+		<h7>Ringkas dalam</h7><div class="sum-text2">
+		<h8>kalimat.</h8></div><a>{{form.jumlah}}</a>
 		</div>
 		<button class= "page" style="margin-right:30px;">Ringkas</button></center>
 	</form>
