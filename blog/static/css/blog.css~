@@ -267,7 +267,7 @@ h1, h2, h3, h4 {
     font-size: 12pt;
     text-align: justify;
     margin-right: 220px;
-    margin-top: 200px;
+    margin-top: 50px;
     padding-top: 15px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -348,13 +348,15 @@ h1, h2, h3, h4 {
 }
 
 
-.result label {
+.sum-result label {
     display: block;
+    margin-bottom: 5px;
     float: inherit;
+    width: 300px;
     padding-top: 5px;
-    margin-top:-29px; 
     margin-left:-180px;
-   
+    margin-top:-29px;
+    padding-bottom: 30px; 
 }
 
 
