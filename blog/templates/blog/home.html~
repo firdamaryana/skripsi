@@ -7,7 +7,7 @@
 {% block body_block %}
     <div class="page-header2">
                 <h1>Meringkas</h1><br>
-			<div style="color:red;position:absolute;left:160px">
+			<div style="color:red;position:absolute;left:30%"><br>
 	
 	{% if form.errors %}
 	   {% for key, error_list in form.errors.iteritems %} 
@@ -17,26 +17,24 @@
 
 	</div>
 		<center>
-		<div style="color:red;position:absolute;left:160px;">{{error}}</div><br>
-
+		<div style="color:red;position:absolute;left:30%;"><br>{{error}}</div><br>
 		<div class="text-here">		
-		<p> Masukkan Teks Pada Kolom Dibawah Ini !</p></div><br>
+		<label class="text-label">Masukkan Teks Pada Kolom Dibawah Ini !</label>
 
 		</center>
 	<div class="saya">		
 
 	<form method="post">
 		{% csrf_token %}
-	<center> 
+	<center>
 		{{form.text}}
 	</center><br>
 		<center>
 		<div class="sum-text">
-                <label class="sum-label">Ringkas Dalam</label>
-		<div class="sum-text2">
-		<p>Kalimat.</p></div><a>{{form.jumlah}}</a>
-		</div>
-		<button class= "page" style="margin-right:30px;">Ringkas</button></center>
+                <label class="sum-label">Ringkas Dalam</label><div class="sum-text2">
+		<label class="sum-label2">Kalimat</label></div><div class="sum-text3">
+                {{form.jumlah}}</div>
+		<input class= "button" value= "Ringkas" type="submit"></center>
 	</form>
 	</div>
 	<br>
@@ -48,7 +46,7 @@
 	<br>
 	<br>
 	<div class="result">
-	<p> Hasil Ringkasan : </p>
+	<label class="sum-label">Hasil Ringkasan :</label>
 	</div>
 	<br>
 	<br>

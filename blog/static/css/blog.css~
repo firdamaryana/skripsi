@@ -154,8 +154,8 @@ h1, h2, h3, h4 {
 
 .saya textarea	{
     position: relative;
-    width:auto;
-    height:auto;
+    width:406px;
+    height:230px;
     margin-right: 180px;
     resize: none; 
     overflow: auto;
@@ -241,11 +241,13 @@ h1, h2, h3, h4 {
     top:380px;
 }
 
-.sum-text a {
+.sum-text3 a {
     position:absolute;
-    left:280px;
-    top:380px;
+    left:450px;
+    top:390px;
     color: #FF0066;
+    float: inherit;
+    display: block;
 }
 
 .sum-text2 p {
@@ -274,11 +276,6 @@ h1, h2, h3, h4 {
     border: 4px dotted #FF0066;
 }
 
-.result p {
-    position:absolute;
-    left:230px;
-    top:550px;
-}
 
 .text-here p {
   -webkit-animation: fade-in 0.27s linear infinite alternate;
@@ -318,12 +315,70 @@ h1, h2, h3, h4 {
 
 .errorlist {list-style-type:none;}
 
-label {
+.sum-text label {
     display: block;
     margin-bottom: 5px;
     float: inherit;
     width: 160px;
     padding-top: 5px;
     text-align: right;
-    margin-left:-400px;
+    margin-left:-350px;
+}
+
+.sum-text2 label {
+    display: block;
+    margin-bottom: 5px;
+    float: inherit;
+    width: 160px;
+    padding-top: 5px;
+    text-align: right;
+    margin-left:-120px;
+    margin-top:-29px;
+}
+
+.text-here label {
+    display: block;
+    margin-bottom: 5px;
+    float: inherit;
+    width: 300px;
+    padding-top: 5px;
+    margin-left:-180px;
+    margin-top:-29px;
+    padding-bottom: 30px;
+}
+
+
+.result label {
+    display: block;
+    float: inherit;
+    padding-top: 5px;
+    margin-top:-29px; 
+    margin-left:-180px;
+   
+}
+
+
+.button {
+   color: #fff;
+   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+   background-color: #FF3366;
+   width : 150px;
+   padding : 12px;
+   cursor : pointer;
+   color : #fff;
+   border : 2px;
+   margin : 2em auto 2em;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   font-size:17px ;
+   margin-left:-180px;
+}
+
+.sum-text3 a {
+   left:400px;
+   top:390px;
+   color: #FF0066;
+   float: inherit;
+   display: block;
 }
