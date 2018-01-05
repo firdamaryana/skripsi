@@ -171,8 +171,8 @@ h1, h2, h3, h4 {
 
 .saya button {
     position:absolute;
-    left:375px;
-    top:450px;
+    left:210px;
+    top:400px;
     margin-top:20px;
     margin-left:200px;
     display : block ;
@@ -243,7 +243,7 @@ h1, h2, h3, h4 {
 
 .sum-text2 p {
     position:absolute;
-    left:350px;
+    left:340px;
     top:380px;
 }
 
@@ -258,7 +258,7 @@ h1, h2, h3, h4 {
     font-size: 12pt;
     text-align: justify;
     margin-right: 220px;
-    margin-top: 220px;
+    margin-top: 200px;
     padding-top: 15px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -267,9 +267,9 @@ h1, h2, h3, h4 {
     border: 4px dotted #FF0066;
 }
 
-.result {
+.result p {
     position:absolute;
-    left:400px;
+    left:230px;
     top:550px;
 }
 
