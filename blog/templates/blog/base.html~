@@ -12,7 +12,7 @@
    	<body>
 	  	<center>
 		<div class="page-header">
-				   <img src="{% static "images/logo.png" %}" alt="SUMMRYKu" width="600" height="200"/>
+				   <h3><img src="{% static "images/logo.png" %}" alt="SUMMRYKu" width="600" height="200"/></h3>
 				</div>
 		</div>
 		</center>
