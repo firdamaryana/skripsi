@@ -159,8 +159,11 @@ h1, h2, h3, h4 {
     margin-right: 180px;
     resize: none; 
     overflow: auto;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);    
-    border: 1px solid #ccc; 
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.6);    
+    border: 0px solid #ccc;
+    transition: border linear .2s,box-shadow linear .2s;
+    border-radius: 5px;
+    font-weight: normal;
 }
 
 
@@ -314,3 +317,13 @@ h1, h2, h3, h4 {
 }
 
 .errorlist {list-style-type:none;}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    float: inherit;
+    width: 160px;
+    padding-top: 5px;
+    text-align: right;
+    margin-left:-400px;
+}
