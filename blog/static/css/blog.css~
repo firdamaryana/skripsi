@@ -230,20 +230,20 @@ h1, h2, h3, h4 {
 
 .sum-text p {
     position:absolute;
-    left:200px;
+    left:170px;
     top:380px;
 }
 
 .sum-text a {
     position:absolute;
-    left:310px;
+    left:280px;
     top:380px;
     color: #FF0066;
 }
 
 .sum-text2 p {
     position:absolute;
-    left:360px;
+    left:350px;
     top:380px;
 }
 
