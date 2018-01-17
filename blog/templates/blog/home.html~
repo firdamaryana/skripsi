@@ -36,7 +36,7 @@
                 <label class="optionbox" for="id_jumlah">
                 {{form.jumlah}}</div>
 		<input class= "button" value= "Ringkas" type="submit"></center>
-                <input id= "smm" class= "buttonclear" value="Clear" onclick="javascript:eraseText();" type="button"></center>
+                <input id= "smm" class= "buttonclear" value="Hapus" onclick="javascript:eraseText();" type="button"></center>
 	</form>
 	</div>
 	<center><br>

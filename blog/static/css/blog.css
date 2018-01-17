@@ -374,7 +374,7 @@ h1, h2, h3, h4 {
    -moz-border-radius: 5px;
    -webkit-border-radius: 5px;
    font-size:17px ;
-   margin-left:20px;
+   margin-left:-180px;
 }
 
 .buttonclear {
@@ -392,8 +392,8 @@ h1, h2, h3, h4 {
    -moz-border-radius: 5px;
    -webkit-border-radius: 5px;
    font-size:17px ;
-   margin-left:260px;
-   margin-top:-134px;
+   margin-left:-350px;
+
 }
 
 .sum-text3 label {
