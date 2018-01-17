@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="{% static 'css/font-awesome.css'%}">
         <link rel="stylesheet" href="{% static 'css/font.css'%}">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="javascript" href="{% static 'js/eraseText.js' %}">
     </head>
    	<body>
 	  	<center>
