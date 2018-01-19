@@ -8,12 +8,17 @@
         <link rel="stylesheet" href="{% static 'css/font-awesome.css'%}">
         <link rel="stylesheet" href="{% static 'css/font.css'%}">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link rel="javascript" href="{% static 'js/eraseText.js' %}">
+        <link rel="stylesheet" href="{% static 'js/' %}">
+        <script type="text/javascript">
+  	  function eraseText() {
+   		  document.getElementById("id_text").value = "";
+	}
+	</script>
     </head>
    	<body>
 	  	<center>
 		<div class="page-header">
-				   <h3><img src="{% static "images/logo.png" %}" alt="SUMMRYKu" width="600" height="200"/></h3>
+				   <h3><a href="http://summaryku.com" style="border-style:none;" tabindex="-1"><img src="{% static "images/logo.png" %}" alt="SUMMRYKu" width="600" height="200"/></h3></a>
 				</div>
 		</div>
 		</center>
