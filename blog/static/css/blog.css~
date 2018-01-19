@@ -1,16 +1,16 @@
 .page-header1 {
     margin-top:15px;
-    margin-bottom:1000px;
+    margin-bottom:1350px;
 }
 
 .page-header2 {
     margin-top:15px;
-    margin-bottom:850px;
+    margin-bottom:900px;
 }
 
 .page-header3 {
     margin-top:15px;
-    margin-bottom:400px;
+    margin-bottom:870px;
     font-family: Apple Chancery;
     font-size: 14pt;
     text-align: justify;
