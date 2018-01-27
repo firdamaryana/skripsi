@@ -31,9 +31,8 @@
 	</center><br>
 		<center>
 		<div class="sum-text">
-                <label class="sum-label">Ringkas Dalam</label><div class="sum-text2">
-		<label class="sum-label2">Kalimat</label></div><div class="sum-text3">
-                <label class="optionbox" for="id_jumlah">
+                <label class="sum-label">Ringkas dalam berapa kalimat ?</label>
+                <label class="optionbox" for="id_jumlah" onkeypress="return isNumberKey(event)">
                 {{form.jumlah}}</div>
 		<input class= "button" value= "Ringkas" type="submit">
                 <input id= "smm" class= "buttonclear" value="Hapus" onclick="javascript:eraseText();" type="button"></center>
