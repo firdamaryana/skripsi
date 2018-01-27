@@ -44,7 +44,7 @@ def home(request):
             print text_input
             summarization_form.summary = summary
             if summary == "":
-				error = "Masukkan teks dengan kalimat yang tepat !"
+				error = "Teks Terlalu pendek !"
             else:
 				summarization_form.save()
 
