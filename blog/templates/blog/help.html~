@@ -19,8 +19,8 @@
  		<p>Cukup sederhana, yaitu:</p>
 		<p> 1. Paste teks Bahasa Indonesia pada kolom yang disediakan pada halaman meringkas.</p> 
                 <p> 2. Tentukan jumlah kalimat ringkasan yang diinginkan.</p>
-		<p> 3. Tekan tombol "Ringkas" untuk memproses peringkasan.</p>
-		<p> 4. Secara otomatis hasil ringkasan akan diberikan di bagian bawah website pada halaman yang sama.</p>
+		<p> 3. Tekan tombol "Ringkas" untuk memproses peringkasan, dan tekan tombol "Hapus" untuk menghapus teks pada kolom ringkasan.</p>
+		<p> 4. Setelah tekan tombol "Ringkas" Secara otomatis hasil ringkasan akan ditampilkan pada bagian bawah website di halaman yang sama.</p>
 	        <p class="p4">Bagaimana cara kerja aplikasi SUMMARYKu?</p>
 		<p> Cara kerja aplikasi ini terdiri dari beberapa tahap, yaitu :
 		<p> 1. Teks yang dimasukkan pada halaman website di ekstraksi terlebih dahulu dengan tahapan Text Mining yaitu, Case Folding, Tokenizing, dan Filtering.</p>
