@@ -320,7 +320,7 @@ h1, h2, h3, h4 {
     margin-bottom: 5px;
     float: inherit;
     width: 250px;
-    padding-top: 5px;
+    padding-top:5px;
     text-align:center;
     margin-left:-200px;
 }
