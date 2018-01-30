@@ -43,8 +43,8 @@
 	<label class="result-label">Hasil Ringkasan :</label>
 	</div>
 	</center>
-	<div class="kamu">
-	<center>
+	<div id="hasil" class="kamu">
+	<center id = "hasil_sum">
         {{summary|safe}}
 	</center>
 	<br>

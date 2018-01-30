@@ -12,6 +12,8 @@
         <script type="text/javascript">
   	  function eraseText() {
    		  document.getElementById("id_text").value = "";
+                  document.getElementById("hasil_sum").innerHTML = "";
+                  document.getElementById("id_jumlah").value = "";
 	}
 	</script>
 	
