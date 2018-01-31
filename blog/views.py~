@@ -34,6 +34,7 @@ def home(request):
         if form.is_valid():
             summarization_form = form.save(commit=False)
             text_input = summarization_form.text
+	    text_input = text_input.encode('utf-8', 'ignore').decode('utf-8')
             fs = FrequencySummarizer()
             jumlah=int(form.cleaned_data['jumlah'])
             try:
@@ -61,7 +62,7 @@ def home(request):
 
     context_dict = {'form': form, 'summary':summary, 'error':error}
 
-    return render(request, 'blog/home.html', context_dict)
+    return render(request, 'blog/home.html', context_dict) 
 
 def help(request):
 
