@@ -34,7 +34,6 @@ def home(request):
         if form.is_valid():
             summarization_form = form.save(commit=False)
             text_input = summarization_form.text
-	    text_input = text_input.encode('utf-8', 'ignore').decode('utf-8')
             fs = FrequencySummarizer()
             jumlah=int(form.cleaned_data['jumlah'])
             try:
@@ -42,7 +41,7 @@ def home(request):
 				    summary += "<p>{}</p>".format(s)
             except:
                 pass
-            print text_input
+            print text_input.encode("utf-8")
             summarization_form.summary = summary
             if summary == "":
 				error = "Teks Terlalu Pendek !"
