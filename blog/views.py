@@ -41,7 +41,7 @@ def home(request):
 				    summary += "<p>{}</p>".format(s)
             except:
                 pass
-            print text_input.encode("utf-8")
+            print text_input
             summarization_form.summary = summary
             if summary == "":
 				error = "Teks Terlalu Pendek !"
@@ -61,7 +61,7 @@ def home(request):
 
     context_dict = {'form': form, 'summary':summary, 'error':error}
 
-    return render(request, 'blog/home.html', context_dict) 
+    return render(request, 'blog/home.html', context_dict)
 
 def help(request):
 
