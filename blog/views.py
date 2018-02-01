@@ -41,7 +41,7 @@ def home(request):
 				    summary += "<p>{}</p>".format(s)
             except:
                 pass
-            print text_input
+            
             summarization_form.summary = summary
             if summary == "":
 				error = "Teks Terlalu Pendek !"
